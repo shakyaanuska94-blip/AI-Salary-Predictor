@@ -1,29 +1,34 @@
-# AI-Salary-Predictor
 # AI Salary Predictor – Web Scraping Module
 
-## Overview
-This module collects job postings from a sample website and stores the data in JSON format.  
-It is the first step of the AI Salary Predictor project pipeline, which will later process the data using LangChain and train a machine learning model to predict salaries.
+## Project Overview
+
+This project is the **Web Scraping module** of the AI Salary Predictor assignment.  
+Its purpose is to **collect job postings from a real job website** and save them in a structured JSON file for further processing (LangChain + Machine Learning modules).
+
+The scraper collects the following fields from each job posting:
+
+- `title` – Job title  
+- `company` – Company name  
+- `location` – Job location  
+- `description` – Job description  
+- `salary` – Salary if available (None if not listed)  
+
+The scraper also implements **pagination** and **error handling** to collect **≥150 job records**.
 
 ---
 
-## Features
-- Scrapes job postings from the selected website.
-- Extracts the following information for each job:
-  - Job title
-  - Company name
-  - Location
-  - Job description
-  - Salary (if available)
-- Stores raw job data in a JSON file (`jobs_raw.json`).
-- Handles missing fields and avoids duplicate records.
-- Implements pagination to scrape multiple pages.
+## Technologies Used
+
+- **Python 3.14**  
+- **requests** – For making HTTP requests  
+- **BeautifulSoup (bs4)** – For parsing HTML and extracting job data  
+- **JSON** – For saving structured job data  
 
 ---
 
 ## How to Run
-1. Make sure Python is installed (version 3.8+ recommended).  
-2. Install required libraries:
+
+1. **Clone the repository** or navigate to your project folder:
 
 ```bash
-pip install requests beautifulsoup4
+cd C:\Users\DELL\Desktop\project1
