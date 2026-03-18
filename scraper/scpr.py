@@ -14,7 +14,7 @@ jobs = []
 job_links = set()
 
 page = 1
-TARGET_JOBS = 150
+TARGET_JOBS = 500
 
 print("Collecting job links...")
 
